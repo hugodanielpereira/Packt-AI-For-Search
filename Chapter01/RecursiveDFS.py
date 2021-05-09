@@ -35,11 +35,11 @@ class RecursiveDFS():
         This creates the search tree
         """
         if not self.found:
-            print "-- proc --", node.state.path
+            print("-- proc --", node.state.path)
             
             #check if we have reached goal state
             if node.state.checkGoalState():
-                print "reached goal state"
+                print("reached goal state")
                 self.found = True
                 
             else:

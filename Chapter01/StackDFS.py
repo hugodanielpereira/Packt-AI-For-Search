@@ -24,11 +24,11 @@ def performStackDFS():
         #pop top node
         currentNode = stack.pop()
         
-        print "-- pop --", currentNode.state.path
+        print("-- pop --", currentNode.state.path)
         
         #check if this is goal state
         if currentNode.state.checkGoalState():
-            print "reached goal state"
+            print("reached goal state")
             break
             
         #get the child nodes 
@@ -43,7 +43,7 @@ def performStackDFS():
     
     
     #print tree
-    print "----------------------"
+    print("----------------------")
     root.printTree()
     
 performStackDFS()
