@@ -30,14 +30,14 @@ def performQueueBFS():
         #get first item in queue
         currentNode = queue.popleft()
         
-        print "-- dequeue --", currentNode.state.name
+        print("-- dequeue --", currentNode.state.name)
         
         #check if this is goal state
         if currentNode.state.checkGoalState():
-            print "reached goal state"
+            print("reached goal state")
             #print the path
-            print "----------------------"
-            print "Path"
+            print("----------------------")
+            print("Path")
             currentNode.printPath()
             break
             
@@ -59,8 +59,8 @@ def performQueueBFS():
                 
             
     #print tree
-    print "----------------------"
-    print "Tree"
+    print("----------------------")
+    print("Tree")
     root.printTree()
     
 performQueueBFS()

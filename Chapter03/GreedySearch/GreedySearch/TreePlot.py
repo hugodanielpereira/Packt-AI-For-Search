@@ -70,5 +70,5 @@ class TreePlot:
         plt.imshow(img)
         plt.axis('off')
         mng = plt.get_current_fig_manager()
-        mng.window.state('zoomed')
+        #mng.window.state('zoomed')
         plt.show()

@@ -30,7 +30,7 @@ class Node:
         """
         This method prints the tree
         """
-        print self.depth , " - " , self.state.name
+        print(self.depth , " - " , self.state.name)
         for child in self.children:
             child.printTree()
  
@@ -41,4 +41,4 @@ class Node:
         """
         if self.parent != None:
             self.parent.printPath()
-        print "-> ", self.state.name
+        print("-> ", self.state.name)

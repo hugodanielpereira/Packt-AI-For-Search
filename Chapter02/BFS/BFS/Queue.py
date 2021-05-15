@@ -9,18 +9,17 @@ Reference: https://docs.python.org/2/tutorial/datastructures.html#using-lists-as
 from collections import deque
 
 queue = deque([])
-print queue
+print(queue)
 
 queue.append("1") 
 queue.append("2") 
 queue.append("3") 
 queue.append("4") 
 
-print queue
+print(queue)
 
 while len(queue) > 0:
     item = queue.popleft()  
-    print item
+    print(item)
     
-print queue  
-    
+print(queue)

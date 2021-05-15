@@ -10,7 +10,7 @@ x = []
 y = []
 labels = []
 areas = []
-for key, value in location.iteritems():
+for key, value in location.items():
     labels.append(key)
     x.append(value[0])
     y.append(value[1])
@@ -26,7 +26,7 @@ for i in range(len(x)):
 """
 
 #plot the connections between places
-for key in connections.iterkeys():
+for key in connections.keys():
     for value in connections[key]:
         x = []
         y = []
@@ -40,6 +40,6 @@ pylab.xlim([0,8])
 pylab.ylim([-1,9]) 
 
 mng = plt.get_current_fig_manager()
-mng.window.state('zoomed')
+#mng.window.state('zoomed')
 plt.axis('equal')
 plt.show()

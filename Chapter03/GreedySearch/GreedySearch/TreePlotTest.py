@@ -19,6 +19,8 @@ graph.add_node(rootNode)
 
 for i in range(3):
     #create node and add node
+    # childNode = pydot.Node("%d Child" % (i+1), style="filled", \
+    #     fillcolor = "#ee0011", xlabel = "1")
     childNode = pydot.Node("Child" , style="filled", \
         fillcolor = "#ee0011", xlabel = "1")
     graph.add_node(childNode)
@@ -34,5 +36,5 @@ img=mpimg.imread('graph.png')
 plt.imshow(img)
 plt.axis('off')
 mng = plt.get_current_fig_manager()
-mng.window.state('zoomed')
+#mng.window.state('zoomed')
 plt.show()

@@ -3,7 +3,7 @@
 '''
 from State import State
 from Node import Node
-import Queue
+from queue import PriorityQueue
 from TreePlot import TreePlot
     
 
@@ -13,7 +13,7 @@ def performGreedySearch():
     """
     
     #create queue
-    pqueue = Queue.PriorityQueue()
+    pqueue = PriorityQueue()
     
     #create root node
     initialState = State()
@@ -37,14 +37,14 @@ def performGreedySearch():
         #currently selected for exploration
         currentNode.fringe = False
         
-        print "-- current --", currentNode.state.place
+        print("-- current --", currentNode.state.place)
         
         #check if this is goal state
         if currentNode.state.checkGoalState():
-            print "reached goal state"
+            print("reached goal state")
             #print the path
-            print "----------------------"
-            print "Path"
+            print("----------------------")
+            print("Path")
             currentNode.printPath()
             
             #show the search tree explored so far
@@ -68,8 +68,8 @@ def performGreedySearch():
         treeplot.generateDiagram(root, currentNode)
                 
     #print tree
-    print "----------------------"
-    print "Tree"
+    print("----------------------")
+    print("Tree")
     root.printTree()
     
 performGreedySearch()
